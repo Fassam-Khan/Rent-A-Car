@@ -1,3 +1,4 @@
+@import url("global.css");
 @font-face {
     font-family: "Roboto";
     src: url("/fonts/Roboto-VariableFont_wdth\,wght.ttf");
@@ -6,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 
 }
 
@@ -145,7 +147,67 @@ li {
     background-color: transparent;
     border: none;
 }
+.hero-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0 5px 20px 0 rgb(227, 227, 227);
+    width: 1024px;
+    margin: auto;
+}
+.boxs{
+    border-right: 1px solid gray;
+    padding: 10px;
+    height: 60px;
+    
 
+    
+}
+.why{
+    max-width: 1280px;
+    margin: auto;
+
+}
+.why > h1{
+    width: 400px;
+    font-size: 35px;
+}
+.count{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.count h2{
+    color: var(--main-bg);
+}
+.count-box{
+border-right: 1px solid gray;
+padding: 30px;
+}
+.product-card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    margin-top: 40px;
+}
+.product button{
+    padding: 12px 40px;
+    border-radius: 4px;
+    border: 1px solid var(--main-bg);
+    color: var(--main-bg);
+    width: 250px;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+   
+    gap: 4px;
+}
 
 
 
@@ -176,6 +238,23 @@ li {
     .hero{
         background-color: #ffffff77;
     }
+    .count-box{
+        border: none;
+        padding: 10px;
+    }
+    .why{
+        padding: 0 20px;
+
+        }
+
+    .product-card{
+        grid-template-columns: 48% 48%;
+    }
+    .product-card img{
+        width: 150px;
+
+    }
+        
 
 
 }

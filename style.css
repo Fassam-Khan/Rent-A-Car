@@ -111,12 +111,7 @@ li {
     display: none;
 }
 
-.offcanvas {
-    top: 66px;
-    width: 312px;
-    margin: auto;
-    height: 100%;
-}
+
 
 .wrapper {
     background-color: #f5f6fb;
@@ -248,12 +243,9 @@ padding: 30px;
         }
 
     .product-card{
-        grid-template-columns: 48% 48%;
+        grid-template-columns: auto;
     }
-    .product-card img{
-        width: 150px;
-
-    }
+    
         
 
 

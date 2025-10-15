@@ -1,54 +1,65 @@
 @font-face {
     font-family: "Roboto";
-    src: url("/fonts/Roboto-VariableFont_wdth\,wght.ttf");  
-}
-*{
-    margin: 0;padding: 0;
-    
-}
-:root{
-    --main-bg: #1aa9e5;
-}
-a{
-    text-decoration: none;
-    color:#ffffff;
-}
-body{
-    font-family: "Roboto";
-}
-.wrapper{
-    background-color: #005085;
-   
+    src: url("/fonts/Roboto-VariableFont_wdth\,wght.ttf");
 }
 
-.top-head{
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+:root {
+    --main-bg: #1aa9e5;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    font-family: "Roboto";
+}
+
+.top-wrapper {
+    background-color: #005085;
+
+}
+
+.top-head {
     height: 60px;
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1280px;
     margin: auto;
-  
+
 }
-#lang{
+
+#lang {
     background-color: transparent;
     border: none;
 }
-.left-box a{
+
+.left-box a {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.right-box{
+
+.right-box {
     display: flex;
 }
-.right-box a{
+
+.right-box a {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.bottom-head{
+
+.bottom-head {
     display: flex;
     height: 80px;
     justify-content: space-between;
@@ -56,31 +67,37 @@ body{
     max-width: 1280px;
     margin: auto;
 }
-.logo-box{
+
+.logo-box {
     display: flex;
     gap: 6px;
 }
-.logo{
-   font-size: 24px;
-   color: #005085;
+
+.logo {
+    font-size: 24px;
+    color: #005085;
 }
-#nav{                                                                
+
+#nav {
     color: black;
     border: none;
     outline: none;
 }
-.midle-box{
+
+.midle-box {
     display: flex;
     align-items: center;
     gap: 16px;
 }
-li{
+
+li {
     list-style: none;
     margin-left: 10px;
-   
+
     color: black;
 }
-#get-started{
+
+#get-started {
     background-color: var(--main-bg);
     padding: 8px 14px;
     border: none;
@@ -88,6 +105,46 @@ li{
     color: white;
 }
 
+.bar {
+    display: none;
+}
+
+.offcanvas {
+    top: 66px;
+    width: 312px;
+    margin: auto;
+    height: 100%;
+}
+
+.wrapper {
+    background-color: #f5f6fb;
+    background-image: url("/Images/HeroCar.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 60px;
+}
+
+
+.hero {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: auto;
+}
+.left-hero{
+    width:33%;
+
+}
+.left-hero h2{
+    font-size: 45px;
+    font-weight: 900;
+}
+.left-hero button {
+    background-color: transparent;
+    border: none;
+}
 
 
 
@@ -95,16 +152,30 @@ li{
 
 
 
-@media screen  and (max-width:768px) {
-    .hidden{
+
+
+@media screen and (max-width:768px) {
+    .hidden {
         display: none;
     }
-    .top-head{
-        padding: 0px 12px;
+
+    .top-wrapper{
+        padding: 0 12px;
     }
-    #meneu{
+    .bottom-head{
+        padding: 0 12px;
+    }
+
+    .bar {
         display: inline;
     }
-    
-    
+    .left-hero{
+        padding: 0 12px;
+        width: 100%;
+    }
+    .hero{
+        background-color: #ffffff77;
+    }
+
+
 }

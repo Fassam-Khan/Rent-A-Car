@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <div class="wrapper">
+        <div class="top-wrapper">
             <div class="top-head">
                 <div class="left-box">
                     <div class="dropdown">
@@ -67,7 +67,7 @@
                 <h4 style="color:#1aa9e6">Rent</h4>
             </div>
             <!-- Middle  -->
-            <div class="midle-box">
+            <div class="midle-box hidden">
                 <div class="dropdown">
                     <button class="btn  dropdown-toggle"
                         id="nav                                                                                                                                                                                                                       "
@@ -124,26 +124,118 @@
             </div>
             <!-- Right- login  -->
             <div>
-                <button class="btn">Login </button>
-                <button id="get-started">Get Started <i class="fa-solid fa-arrow-right"></i></button>
-                <i style="display: none;" class="fa-solid fa-bars"  id="menue" onclick="myFunction()"></i>
+                <button class="btn hidden">Login </button>
+                <button id="get-started" class="hidden">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+
             </div>
-            
+            <button class="btn bar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop"><img src="/Images/bar.svg" alt=""></button>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <!-- Main Content  -->
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle"
+                            id="nav                                                                                                                                                                                                                       "
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                            Rent A Car
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"> Purchase Car</a></li>
+                            <li><a class="dropdown-item" href="#"> Book
+                                    Driver</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle"
+                            id="nav                                                                                                                                                                                                                       "
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                            Brands
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Toyota</a></li>
+                            <li><a class="dropdown-item" href="#"> Civic</a>
+                            <li><a class="dropdown-item" href="#"> Honda</a>
+                            <li><a class="dropdown-item" href="#"> Suzuki</a>
+
+
+
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle"
+                            id="nav                                                                                                                                                                                                                       "
+                            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Yatch Rental
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>--</li>
+
+
+                    </div>
+                    <div>
+                        <a href="">
+                            <li>Promotion</li>
+                        </a>
+
+                    </div>
+                    <div> <a href="">
+                            <li>Contact Us</li>
+                        </a>
+                    </div>
+                    <div></div>
+                    <div>
+                        <button class="btn ">Login </button>
+                        <button id="get-started" class="">Get Started <i class="fa-solid fa-arrow-right"></i></button>
+
+                    </div>
+
+
+
+
+                    <!-- Main Content closed -->
+                </div>
+            </div>
 
         </div>
     </header>
     <main>
+        <!-- Hero -->
+        <div class="wrapper">
+            <div class="hero">
+                <div class="left-hero">
+                    <p style="font-size: 26px;">Rent a car in <span><b>Dubai</b></span></p>
+                    <h2>Find your dream car within a minute</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, aliquid?Lorem ipsum, dolor sit
+                        amet
+                        consectetur adipisicing elit. Cum, consequuntur.</p>
+                    <button><img src="/Images/AppStoreBtn.png" alt=""></button>
+                    <button><img src="/Images/PlayStoreBtn.png" alt=""></button>
+                </div>
+                <div class="right-hero">
+
+                </div>
+            </div>
+        </div>
+        <div class="hero-bottom">
+            
+        </div>
+        
 
     </main>
 
 
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-        <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
 
 </html>

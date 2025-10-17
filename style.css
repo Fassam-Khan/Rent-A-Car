@@ -203,7 +203,93 @@ padding: 30px;
    
     gap: 4px;
 }
+.book-section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 
+}
+.filters{
+    gap: 30px;
+}
+.book-section .p-card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    margin-top: 30px;
+    border: none;
+}
+.card{
+    border: none;
+}
+.infp-text{
+    width: 60%;
+
+}
+.info-left{
+    width: 48%;
+}
+.info-card{
+    width: 48%;
+
+}
+.testimonial{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+.testinomial-head{
+    width: 550px;
+}
+.testimonial-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+.test-card{
+    width: 250px;
+    /* border: 1px solid black */
+    gap: 20px   ;
+}
+.question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.question-head{
+    width: 500px;
+}
+.faq{
+    width: 100%;
+    padding: 10px;
+}
+.accordion-button{
+    margin-top: 20px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+}
+footer ul{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.top-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+}
 
 
 
@@ -245,7 +331,52 @@ padding: 30px;
     .product-card{
         grid-template-columns: 95%;
     }
-    
+    .book-section{
+        flex-wrap: wrap;
+        margin-top: 30px;
+        text-align: center;
+        /* padding: 20px; */
+        /* margin: 10px; */
+    }
+    .book-section .p-card{
+        grid-template-columns: auto;
+    }
+    .filters{
+        gap: 10px;
+    }
+    .info{
+        flex-wrap: wrap;
+    }
+    .info-left{
+        width: 100%;
+    }
+    .info-left img{
+        width: 100%;
+    }
+    .info-right{
+        width: 100%;
+    }
+    .infp-text{
+        width: 100%;
+    }
+    .info-card{
+        width: 100%;
+    }
+    .testimonial{
+        margin-top: 20px;
+    }
+    .testinomial-head{
+        width: 100%;
+    }
+    .testinomial-head img{
+        width: 100%;
+    }
+    .question-head{
+        width: 100%;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
         
 
 
